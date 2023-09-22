@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
 *{
     margin: 0;
@@ -13,6 +13,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     overflow: hidden;
 }
 header {
@@ -20,7 +21,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 40px 100px;
+    padding: 30px 50px;
     z-index: 2;
     display: flex;
     align-items: center;
@@ -52,6 +53,31 @@ section video {
     z-index: 2;
     backdrop-filter: blur(10px);
     border-top: 1px solid rgba(255,255,255,.5);
+}
+.content {
+    position: relative;
+    /* top: -150px; */
+    z-index: 2;
+    text-align: center;
+    transition: .5s;
+    transition-delay: 1s;
+}
+.content h2 {
+    position: relative;
+    color: #fff;
+    font-size: 10vw;
+    line-height: .35em;
+    text-shadow: 0 5px 5px rgba(0,0,0,.2);
+    font-family: 'Dancing Script', cursive;
+}
+.content h2 span{
+    font-size: .2em;
+    font-weight: 300;
+    letter-spacing: 5px;
+    background-color: #fff;
+    color: #111;
+    padding: 0 10px;
+    box-shadow: 0 5px 5px rgba(0,0,0,.2);
 }
 ul{
     position: absolute;
@@ -102,4 +128,9 @@ ul li a:before {
 }
 ul li a:hover:before {
     transform: skewX(45deg) translateX(-150px);
+}
+.subscribe {
+    position: relative;
+    z-index: 2;
+    text-align: center;
 }

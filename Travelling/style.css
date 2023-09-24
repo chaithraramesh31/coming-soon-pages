@@ -21,7 +21,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 30px 50px;
+    padding: 0px 20px;
     z-index: 2;
     display: flex;
     align-items: center;
@@ -52,11 +52,12 @@ section video {
     height: 50%;
     z-index: 2;
     backdrop-filter: blur(10px);
-    border-top: 1px solid rgba(255,255,255,.5);
+    box-shadow: 0 -5px 5px rgba(0,0,0,.05);
+    /* border-top: 1px solid rgba(255,255,255,.5); */
 }
 .content {
     position: relative;
-    /* top: -150px; */
+    top: -120px;
     z-index: 2;
     text-align: center;
     transition: .5s;
@@ -65,7 +66,7 @@ section video {
 .content h2 {
     position: relative;
     color: #fff;
-    font-size: 10vw;
+    font-size: 8em;
     line-height: .35em;
     text-shadow: 0 5px 5px rgba(0,0,0,.2);
     font-family: 'Dancing Script', cursive;
@@ -101,7 +102,7 @@ ul li a {
     border-right: 1.5px solid rgba(255,255,255,.2);
     border-bottom: 1.5px solid rgba(255,255,255,.2);
     border-radius: 10px;
-    background: rgba(255,255,255,.3);
+    background: rgba(255,255,255,.5);
     backdrop-filter: blur(4px);
     box-shadow: 0 5px 45px rgba(255,255,255,.5);
     text-decoration: none;
@@ -124,13 +125,120 @@ ul li a:before {
     height: 100%;
     background: rgba(255,255,255,.5);
     transform: skewX(45deg) translateX(150px);
-    transition: .6s;
+    transition: .9s;
 }
 ul li a:hover:before {
     transform: skewX(45deg) translateX(-150px);
 }
 .subscribe {
     position: relative;
+    top: 40px;
     z-index: 2;
     text-align: center;
+    color: #fff;
+}
+.subscribe p {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+.inputBox {
+    position: relative;
+    width: 100%;
+    height: 40px;
+}
+.subscribe input {
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 600;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    box-shadow: none;
+    outline: none;
+    border: 3px solid #fff;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin-top: 10px;
+}
+.subscribe button {
+    margin-top: 20px;
+    padding: 5px 10px;
+    color: #fff;
+    font-size: 1.2em;
+    border: 1.5px solid rgba(255,255,255,.5);
+    border-right: 1.5px solid rgba(255,255,255,.2);
+    border-bottom: 1.5px solid rgba(255,255,255,.2);
+    border-radius: 10px;
+    background: rgba(255,255,255,.5);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 5px 45px rgba(255,255,255,.5);
+    cursor: pointer;
+    overflow: hidden;
+}
+.subscribe button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 100%;
+    background: rgba(255,255,255,.5);
+    transform: skewX(45deg) translateX(150px);
+    transition: .9s;
+}
+.subscribe button:hover::before {
+    transform: skewX(45deg) translateX(-150px);
+}
+
+@media (max-width:750px) {
+    .content {
+        top: -100px;
+    }
+    .content h2 {
+        font-size: 6em;
+    }
+}
+@media (max-width:500px) {
+    header {
+        padding: 10px 20px;
+    }
+    header .logo {
+        font-size: 1.3em;
+    }
+    .content {
+        top: -90px;
+    }
+    .content h2 {
+        font-size: 4em;
+    }
+    .subscribe {
+        top: 60px;
+        padding: 0px 10px;
+    }
+    .subscribe p {
+        font-size: 1.1em;
+    }
+    .subscribe input {
+        font-size: 1em;
+    }
+}
+@media (max-width:335px) {
+    .content h2 {
+        font-size: 3.5em;
+    }
+    ul li a {
+        width: 70px;
+        height: 70px;
+    }
+    .subscribe {
+        top: 70px;
+    }
+    .subscribe p {
+        font-size: .92em;
+        font-weight: 500;
+    }
+    .subscribe input {
+        font-size: .9em;
+        font-weight: 500;
+    }
 }

@@ -79,7 +79,8 @@ section .contentBx .countdown .time {
     background: #fff;
     margin-right: 20px;
     font-size: 48px;
-    min-width: 110px;
+    min-width: 100px;
+    height: 100px;
     font-weight: 700;
     padding: 10px 5px 15px;
     border-radius: 4px;

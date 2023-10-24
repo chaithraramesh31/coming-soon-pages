@@ -6,7 +6,7 @@ function newYear(){
     var second = 1000;
     var minute = second * 60;
     var hour = minute * 60;
-    var day = hour * 2
+    var day = hour * 24;
 
     var d = Math.floor(gap / (day));
     var h = Math.floor((gap % (day)) / (hour));

@@ -92,7 +92,7 @@ section .contentBx .countdown .time span {
     font-weight: 600;
     color: #312747;
 }
-section .contentBx .subscribe {
+section .contentBx .subscribe form{
     display: flex;
     gap: 20px;
     margin-top: 20px;
@@ -103,16 +103,12 @@ section .contentBx .subscribe input {
     outline: none;
     font-size: 20px;
 }
-section .contentBx .subscribe a {
-    position: relative;
-    display: inline-block;
+section .contentBx .subscribe input[type="submit"] {
     background: #ff0083;
     color: #fff;
-    text-decoration: none;
     font-size: 20px;
-    letter-spacing: 2px;
-    padding: 10px 15px;
     border: 1px solid #fff;
+    cursor: pointer;
 }
 section .imgBx img {
     position: relative;
@@ -173,25 +169,24 @@ section .sci li a {
     section .contentBx .countdown .time {
         font-size: 40px;
         min-width: 70px;
+        height: 70px;
         margin-right: 10px;
     }
     section .contentBx .countdown .time span {
         font-size: 14px;
     }
-    section .contentBx .subscribe {
-        gap: 10px;
+    section .contentBx .subscribe form{
+        gap: 5px;
     }
     section .contentBx .subscribe input {
         padding: 5px;
         outline: none;
         font-size: 14px;
     }
-    section .contentBx .subscribe a {
+    section .contentBx .subscribe input[type="submit"] {
         background: #fff;
         color: #ff0083;
-        letter-spacing: 0;
         font-size: 14px;
-        padding: 5px 5px;
     }
     section .sci {
         left: 20px;
